@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 function Square({ value, onSquareClick }) {
+  const [xIsNext, setXIsNext] = useState(true);
+  const [squares, setSquares] = useState(Arraay(9).fill(null));
   return (
     <button className="square" onClick={onSquareClick}>
       {value}
